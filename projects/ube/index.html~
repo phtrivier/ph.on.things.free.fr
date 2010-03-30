@@ -1,0 +1,144 @@
+<html>
+ <head>
+  <title>Boots Puzzle Home Page</title>
+  <link href="../../css/site.css" type="text/css" rel="stylesheet"/>
+ </head>
+ <body>
+
+   <a href="../../index.html">Back to index</a>
+
+   <h1>Boots Puzzle</h1>
+
+   <h2>What the hell is that ?</h2>
+   <p>Boots puzzle is a little game for GNU/Linux.</p>
+   <p>You're a playing a vaguely lab-rat-like guy who must go from the
+     entry of a room (in blue) to the exit of a room (in green).</p>
+   <p>At startup you walk with your bare feet, but you can pick
+     'boots' that will let you move several cells at a time, walk on
+     water, move like a Knight in chess, etc...</p>
+   <p>The game is written in Ruby, with a DSL to create new rooms, new
+     kind of boots, and script everything.</p>
+   <p>Oh, did I mentionned it's free software released under GPL ?</p>
+
+   <hr/>
+
+   <h2>Hum...kay, what does it look like?</h2>
+
+   <h3>The game</h3>
+
+   <p>It looks like sh...omething that can be really improved at the
+     moment, but something like this :</p>
+
+   <img src="pics/screenshot_v0.3.2.png" alt="Boots Puzzle,v0.3.2"/>
+
+   <p>In this screen, you have your player, you're using 'double
+     boots' so you can jump two cells at a time, and arrows show you
+     where you can go.</p>
+
+   <h3>The editor</h3>
+   <p>There is a <a href="http://shoooes.net">Shoes</a> app to create the puzzles, and it looks even uglier than the game itself : </p>
+
+   <img width="800" src="pics/screenshot_puzzle_editor.png" alt="Puzzle editor"/>
+
+   <p>Still, making GUIs with Shoes is pretty fun, you should try it if you're a rubyist or something</p>
+
+   <hr/>
+
+   <h2>Okay, let me try it !</h2>
+
+   <h3>Disclaimer</h3>
+   <p>I've only tested this on MY machine, a i486 with Ubuntu Hardy
+   Heron. So don't expect miracles if you're too far from this kind of configuration.</p>
+
+   <h3>Disclaimer, the return</h3>
+   <p>This is really a work-in-beginning-of-sort-of-progress, so there
+     is still a lot that might break, look stupid, etc...
+     <br/>
+     <q>Don't shoot the coder, he's doing his best.</q>
+   </p>
+
+   <h3>Install and play (for lucky debian users)</h3>
+
+   <ul>
+     <li>Edit /etc/apt/sources.list and add the following line :
+       <p class="command">
+       deb http://ph.on.things.free.fr/projects/boots-puzzle/apt binary/
+       </b>
+       </p>
+     </li>
+     <li>Politely ask debian to install the things :
+       <p class="command">sudo apt-get install boots-puzzle</p>
+     </li>
+     <li>Run the game :
+       <p class="command">boots-puzzle --adventure=demo</p>
+     </li>
+     <li>Ask for help:
+       <p class="command">boots-puzzle -v</p>
+     </li>
+   </ul>
+
+   <h3>From sources</h3>
+
+   <h4>Get sources</h4>
+   <ul>
+     <li>Latest released version
+     : <a href="releases/boots-puzzle-0.3.9.tar.gz">0.3.9</a> (Sept 25, 2009)</li>
+     <li>Browse releases : <a href="releases">Releases</a></li>
+     <li>From Github :
+     git://github.com/phtrivier/boots-puzzle.git</li>
+   </ul>
+
+   <h4>Install</h4>
+   <p>Then read INSTALL for more details, but basically you will need
+   to install ruby and a couple of ruby gems... I'm working on
+   improving the distribution, don't worry...</p>
+
+   <h4>Play!</h4>
+   <p>There are two adventures to play in releases ; one is 'foobar',
+   and it really sucks. The other one is called 'demo', and it
+   demonstrates more stuff. So go for this :</p>
+   <b>rake demo</b>
+
+   <p>But if you feel adventurous ..</p>
+
+   <b>rake play adventure=foobar</b>
+
+   <p>In any case, you should give this a try : </p>
+
+   <b>rake help</b>
+
+   <hr/>
+
+   <h2>This doesn't work !!!!!</h2>
+   <p>Okay, you can shout at phtrivier AT yahoo DOT fr, I might even be able to help !</p>
+
+   <hr/>
+
+   <h2>This looks like crap !!!!</h2>
+   <p>I'am glad you mentionned it. I know. Thanks for nicely offering
+   to help me by sending your nice 32x32 RBG PNG files to fix the art
+   that I've found on the internet (thanks to lots of nice people
+   referenced in file ART of the archive.)</p>
+
+   <h2>Where is the documentation ???</h2>
+   <p>The controls of the game are explained when typing 'rake help' or simply the 'h' key in the game.
+
+   <p>I am preparing some documentation about how to create levels and
+     write plugins.  After installation, you should have a
+     '/usr/share/boots-puzzle/doc/boots-puzzle.html/index.html' file
+     with the current state of it.</p>
+
+   <br/>
+   <br/>
+   <small>Copyright (C) 2008 Pierre-Henri Trivier</small>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
