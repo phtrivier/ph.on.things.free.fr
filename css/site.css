@@ -6,3 +6,37 @@
     font-weight:bold;
     font-family:Courrier New;
 }
+
+body {
+    width : 80%;
+    margin-left : 10%;
+    margin-right : 10%;
+}
+
+h1, h2 {
+    text-align : center;
+}
+
+.propaganda, .navigation {
+    text-align : center;
+}
+
+.short_list {
+   width : 70%;
+   margin-left : 15%;
+   margin-right : 15%;
+}
+
+.downloads {
+    width : 50%:
+    text-align : center;
+   border-style : solid;
+   border-color : gray;
+   margin-left : 30%;
+   pading-top : 10px;
+}
+
+.downloads td {
+    text-align : center;
+}
+
