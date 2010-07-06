@@ -1,0 +1,41 @@
+#-=-=-=-=-=Sample Configuration file=-=-=-=-=-
+[Free]
+HostName = ftpperso.free.fr
+LoginName = ph.on.things
+Password = changeme
+SrcDir = /home/phtrivier/prj/ph.on.things.free.fr
+DestDir = /
+ASCIIfile = {
+	  *.c 
+	  *.html 
+	  *.css 
+	  *.js
+}
+IgnoreLocalDir = {
+	       .git
+}
+IgnoreLocalDir = {
+	       /home/phtrivier/prj/ph.on.things.free.fr/projects/boots-puzzle/releases/
+	       /home/phtrivier/prj/ph.on.things.free.fr/projects/ube/releases/
+	       /home/phtrivier/prj/ph.on.things.free.fr/projects/pacman-remake/releases/
+
+}
+IgnoreRemoteDir = { 
+		/projects/boots-puzzle/releases/
+		/projects/ube/releases/
+		/projects/pacman-remake/releases/
+}
+
+ [default]
+ AsciiFile = {
+ *.htm
+ *.html
+ *.txt
+ *.asc
+ }
+ IgnoreLocalFile = {
+ *.bak
+ *.tmp
+ *.swp
+ *~
+ }
