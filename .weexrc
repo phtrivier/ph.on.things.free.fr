@@ -14,6 +14,10 @@ ASCIIfile = {
 IgnoreLocalDir = {
 	       .git
 }
+IgnoreLocalFile = {
+		.gitignore
+		.weexrc
+}
 IgnoreLocalDir = {
 	       /home/phtrivier/prj/ph.on.things.free.fr/projects/boots-puzzle/releases/
 	       /home/phtrivier/prj/ph.on.things.free.fr/projects/ube/releases/
